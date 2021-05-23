@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Polyline} from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Polyline, Popup} from 'react-leaflet'
 import './Map.css';
 import Leaflet from 'leaflet';
 import image from '../avion_emirates.png';
@@ -11,35 +11,6 @@ const MyIcon = new Leaflet.Icon({
 });
 
 function  Map(props) {
-
-    // var planes = new Object();
-    // var plane = new Object();
-
-    // var largo = parseInt(props['positions'].length);
-    // var actual_position;
-
-    // if (props !== undefined) {
-    //     if (props['positions'][largo-1]!== undefined){
-    //         actual_position = props['positions'][largo-1]['position']
-    //     }
-    // }
-
-    // for (var vuelo in props.flights) {
-    //     planes[vuelo['code']] = {origen: vuelo['origin'], destino: vuelo['destination']}
-    //   }
-    // console.log(planes)
-    
-    
-    
-    
-
-
-    if (props.flights.length >0 && props.positions.length >0){
-        // console.log('vuelos: ',props.flights)
-        // console.log('posiciones: ',props.positions)
-        // console.log('vuelo: ',props.flights[0]['code'])
-        // console.log('posicion: ',props.positions[0]['position'])
-    }
 
     return (
         
@@ -78,7 +49,9 @@ function  Map(props) {
                             {/* {console.log(info_position['position'])}
                             <Polyline positions={[
                                 [info_position['position'][0],info_position['position'][1]],]} color={'#c42526'} /> */}
-                                <Marker icon={MyIcon} position={[info_position['position'][0],info_position['position'][1]]}></Marker>
+                                <Marker icon={MyIcon} position={[info_position['position'][0],info_position['position'][1]]}>
+                                    <Popup>Código del vuelo: {info_position['code']}</Popup>
+                                </Marker>
                         </div>
                     )
                 }

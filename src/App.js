@@ -6,6 +6,9 @@ import Map from './components/Map';
 import Chat from './components/Chat';
 import NavbarWeb from './components/Navbar';
 import FlightInformation from './components/FlightInformation';
+import ControlCenter from './components/ControlCenter'
+import { flexbox } from '@material-ui/system';
+import { Column, Row } from 'simple-flexbox';
 
 function App() {
 
@@ -49,15 +52,16 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: '#000'}}>
       <NavbarWeb/>
-      <Router>
-        <Switch>
-          <Route path="/"exact>
-            <Map flights={flights} positions={positions}/>
-            <Chat messages={messages}/>
+      <Map flights={flights} positions={positions}/>
+      <Chat messages={messages}/>
+      <Row>
+        <Column flexGrow={1} horizontal='center'>
             <FlightInformation flights={flights}/>
-          </Route>
-        </Switch>
-      </Router>
+        </Column >
+        <Column flexGrow={1} horizontal='center'>
+            <ControlCenter messages={messages}/>
+        </Column >
+      </Row>
     </div>
   );
 }
