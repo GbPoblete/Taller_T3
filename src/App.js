@@ -55,10 +55,10 @@ function App() {
       <Map flights={flights} positions={positions}/>
       <Chat messages={messages}/>
       <Row>
-        <Column flexGrow={1} horizontal='center'>
+        <Column flexGrow={1} horizontal='center' style={{marginLeft: "5%", marginRight: "5%"}}>
             <FlightInformation flights={flights}/>
         </Column >
-        <Column flexGrow={1} horizontal='center'>
+        <Column flexGrow={1} horizontal='center' style={{marginLeft: "5%", marginRight: "5%"}}>
             <ControlCenter messages={messages}/>
         </Column >
       </Row>

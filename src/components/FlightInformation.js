@@ -7,7 +7,7 @@ function  FlightInformation(props) {
 
   return (
     <div className="FlightInformation">
-        <Card border='success' style={{marginTop: '5%', marginLeft: '5%', marginRight: '5%', width: '100%'}}>
+        <Card border='success' style={{marginTop: '5%', width: 500}}>
             <Card.Header style={{color: "#3e7750", fontWeight: 'bold', fontSize: 30, fontFamily: 'EK'}}>Información de vuelos</Card.Header>
             <Card.Body >
                 <Card style={{color: "#000", marginTop: '1%', marginBottom: '1%'}}>

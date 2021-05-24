@@ -7,7 +7,7 @@ function  ControlCenter(props) {
 
   return (
     <div className="ControlCenter">
-            <Card border="danger" style={{marginTop: '5%', marginLeft: '5%', marginRight: '5%', width: '100%'}}>
+            <Card border="danger" style={{marginTop: '5%', width: 540}}>
                 <Card.Header style={{color: "#c32627", fontWeight: 'bold', fontSize: 30, fontFamily: 'EK'}}>Centro de control</Card.Header>
                 <Card.Body >
                     <Card style={{color: "#000", marginTop: '1%', marginBottom: '1%'}}>
