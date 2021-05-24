@@ -59,7 +59,9 @@ function  Map(props) {
         }
         
         </MapContainer>
-
+        <h2 style={{color: "#b8944a", fontWeight: 'bold', fontSize: 15, fontFamily: 'EK', marginRight: '83%', width: '100%'}}>
+            **Si se hace zoom se puede ver que el avión avanza y deja una estela de aviones :) No es un bug, se crea un nuevo ícono de avión cada vez que cambia de posición.
+        </h2>
       </div>
     );
     }

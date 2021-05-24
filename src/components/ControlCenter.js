@@ -7,8 +7,8 @@ function  ControlCenter(props) {
 
   return (
     <div className="ControlCenter">
-            <Card border='success' style={{marginTop: '5%', marginLeft: '5%', marginRight: '5%', width: '100%'}}>
-                <Card.Header style={{color: "#3e7750", fontWeight: 'bold', fontSize: 30, fontFamily: 'EK'}}>Centro de control</Card.Header>
+            <Card border="danger" style={{marginTop: '5%', marginLeft: '5%', marginRight: '5%', width: '100%'}}>
+                <Card.Header style={{color: "#c32627", fontWeight: 'bold', fontSize: 30, fontFamily: 'EK'}}>Centro de control</Card.Header>
                 <Card.Body >
                     <Card style={{color: "#000", marginTop: '1%', marginBottom: '1%'}}>
                         {props.messages.map((info_message,id_message) => {

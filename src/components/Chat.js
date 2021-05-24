@@ -27,7 +27,7 @@ function Chat(props) {
   return (
             
     <div className="Chat">
-      <Widget title={'Centro de control'} subtitle={'Gigi Routes'} senderPlaceHolder={'Escribe un mensaje aquí'}
+      <Widget title={'Chat del centro de control'} subtitle={'Gigi Routes'} senderPlaceHolder={'Escribe un mensaje aquí'}
       />
     </div>
   );
